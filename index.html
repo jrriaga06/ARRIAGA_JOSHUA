@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joshua R. Arriaga</title>
+    <link rel="icon" href="images/ICONO.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+	
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img src="images/LOGO.png" alt="">
+          </div>
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Inicio</a></li>
+              <li><a href="#video">Video</a></li>
+              <li><a href="#about">Trayectoria</a></li>              
+              <li><a href="#portfolio">Proyectos</a></li>
+			  		  <li><a href="#info">Más sobre mí</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div> 
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> 
+          
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>Mi nombre es Joshua Arriaga y te invito a que veas mi página web.</p>
+                    </div>
+
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Anterior</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Siguiente</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/slide-1.jpg",
+                              title : "¡Sé tu mismo!",
+							              },
+                            {
+                              bigImage :"images/slide-2.jpg",
+                              title : "¡No te rindas nunca!",
+                            },
+                            {
+                              bigImage :"images/slide-3.jpg",
+                              title : "¡La preparación es la clave del éxito!",
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+    <section id="video" class="separator blue">
+      <header class="title">
+        <center><h2>VIDEO <span>PRESENTACIÓN</span></h2></center>
+      </header>
+      <div class="youtube">
+  
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DFiZ0DL4B78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>Mi <span>Trayectoria</span></h2>
+        <p>Mi nombre es Joshua Reneé Arriaga Galicia y a lo largo de mi vida me he desempeñado en realizar varias cosas, también he estudiado en varias instituciones educativas. A continuación, puedes observar cada una de ellas:</p>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/1.jpg)"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><img src="images/COLEGIO1.jfif" alt="" width="60" height="60"></div>
+                <div class="about-detail">
+                  <h4>Colegio Católico San Pablo</h4>
+                  <p>2007 - 2009</p>
+                  <p>En este colegio estudié mis párvulos (preprimaria), me enseñaron sobre religión y también fue en donde aprendí a leer y escribir.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><img src="images/COLEGIO2.jpg" alt="" width="60" height="60"></div>
+                <div class="about-detail">
+                  <h4>Instituto Tecnológico de Computación</h4>
+                  <p>2010 - 2018</p>
+                  <p>En el ITC, estudié desde primero primaria hasta tercero básico. Aprendí muchas cosas, principalmente en los básicos, pues fue ahí donde me enseñaron a programar y a crear microempresas.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><img src="images/COLEGIO3.png" alt="" width="60" height="60"></div>
+                <div class="about-detail">
+                  <h4>Liceo Clásico en Computación</h4>
+                  <p>2020 - 2021</p>
+                  <p>En el Liceo Clásico estudié mi carrera, la cual es Bachiller en Computación con Orientación Comercial -BACO-, es aquí donde empieza mi carrera como futuro ingeniero, pues gracias a la elección de esta carrera me di cuenta que mi futuro es ser Ingeniero.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+    <section class="separator gray">
+      <div class="container">
+        
+             
+          </div>
+
+    </section>
+
+	    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="light">
+      <header class="title">
+        <h2>Mis <span>Proyectos</span></h2>
+        <p>Aquí te muestro los proyectos que he realizado a lo largo de mi carrera.</p>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <ul id="filters" class="list-inline">
+            <li data-filter="all" class="filter">TODO</li>
+            <li data-filter=".programas" class="filter">PROGRAMAS</li> 
+            <li data-filter=".web" class="filter">DISEÑOS WEB</li> 
+            <li data-filter=".video" class="filter">VIDEO</li> 
+            <li data-filter=".empresas" class="filter">EMPRESAS</li> 
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <!-- PORTFOLIO OBJECT -->
+            <script type="text/javascript">
+            var portfolio = [
+                    {
+                      category : "programas",
+                      image : "images/BHGPROGRAM.png",
+                      title : "FACTURA <span>BHG</span>",
+                      link : "#none",
+                      text : "Es un software para facturar día a día en la empresa."
+                    },
+                    {
+                      category : "programas",
+                      image : "images/TLBPROGRAM.png",
+                      title : "FACTURA <span>TLB</span>",
+                      link : "#none",
+                      text : "Es un programa que lleva el registro de las ventas."
+                    },
+                    {
+                      category : "web",
+                      image : "images/WEBSTARBUCKS.png",
+                      title : "Web <span>Starbucks</span>",
+                      link : "https://joshuar06arriaga.github.io/LAB3/",
+                      text : "Es una réplica de la página original de Starbucks."
+                    },
+                    {
+                      category : "web",
+                      image : "images/WEBCOVID.png",
+                      title : "Web <span>COVID-19</span>",
+                      link : "https://joshuar06arriaga.github.io/COVID19/",
+                      text : "Es una página informativa sobre el virus COVID-19."
+                    },
+                    {
+                      category : "video",
+                      image : "images/VIDEOLOGO.png",
+                      title : "LOGO <span>LCC</span>",
+                      link : "https://youtu.be/_igGISTccVo",
+                      text : "Animación del logo del Liceo Clásico en Computación."
+                    },
+                    {
+                      category : "empresas",
+                      image : "images/LOGOPICOSO.png",
+                      title : "<span>Picoso</span>",
+                      link : "#none",
+                      text : "Empresa mexicana especializada en burritos."
+                    },
+                    {
+                      category : "empresas",
+                      image : "images/KAQLOGO.png",
+                      title : "K'aq <span>Rquilwaj</span>",
+                      link : "#none",
+                      text : "Restaurante de comida típica de Guatemala."
+                    },
+                    {
+                      category : "empresas",
+                      image : "images/BHGLOGO.png",
+                      title : "Bistro Horizonte <span>Guatemalteco</span>",
+                      link : "https://l.instagram.com/?u=https%3A%2F%2Fcutt.ly%2FDmTEO6Q&e=ATPBnsMk8eshaH5CydEB_NSHPhPuWk_DYlPf9xXTVLs1ixb6wga9uH5uoJMIWhdUqmKeHkHqryGceDFA0FJNhlI&s=1",
+                      text : "Cafetería de origen guatemalteco."
+                    }
+                ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+	    <!-- INFO -->
+
+    <section id="info" class="dark">
+      <header class="title">
+        <h2>Mis <span>habilidades</span></h2>
+        <p>Aquí te muestro en las actividades o ramas en las que me desenvuelvo.</p>
+      </header>
+
+      <div class="container experties">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="82%"></span><em>Diseño Web</em></li>
+                <li><span class="percentage" data-value="95%"></span><em>Programación</em></li>
+                <li><span class="percentage" data-value="64%"></span><em>Matemáticas</em></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="97%"></span><em>Ofimática</em></li>
+                <li><span class="percentage" data-value="43%"></span><em>Arte y diseño</em></li>
+                <li><span class="percentage" data-value="25%"></span><em>Deportes</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>	
+	
+
+    <section class="separator blue">
+      <div class="container">
+        
+             
+          </div>
+
+    </section>
+
+
+    <!-- CONTACTAME -->
+
+     <section id="contact" class="dark">
+      <header class="title">
+        <h2>Contác<span>tame</span></h2>
+        <p>Si gustas comunicarte conmigo, búscame en mis redes sociales o bien, ingresa tus datos en la siguiente sección:</p>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 animated" data-animate="fadeInLeft">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Correo Electrónico">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="3" placeholder="Escribe tu mensaje."></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-default submit">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 animated" data-animate="fadeInRight">
+            <address>
+                <span><i class="fa fa-map-marker fa-lg"></i> Ciudad de Guatemala, Guatemala</span>
+                <span><i class="fa fa-phone fa-lg"></i> +502 4190-1877</span>
+                <span><i class="fa fa-envelope-o fa-lg"></i> <a href="joshuar.arriaga0306@gmail.com">joshuar.arriaga0306@gmail.com</a></span>
+                <span><i class="fa fa-instagram fa-lg"></i> <a href="https://instagram.com/j.arriaga06?utm_medium=copy_link">/j.arriaga06</a></span>
+                <span><i class="fa fa-facebook fa-lg"></i> <a href="https://www.facebook.com/joshuar.arriaga0306/">/joshuar.arriaga0306</a></span>
+              </address>
+          </div>
+		  
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>HECHO POR: <a href="">Joshua R. Arriaga</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div>
+    
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
